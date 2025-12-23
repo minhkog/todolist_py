@@ -12,4 +12,4 @@ Chọn:
 
   - Start command: gunicorn app:app
 
-Deploy
+  - Deploy
