@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority To-Do</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>✨ Weekly Planner</h1>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="What needs to be done?" autocomplete="off">
+            <select id="priority-select">
+                <option value="1">🔥 High Priority</option>
+                <option value="2" selected>⚡ Medium</option>
+                <option value="3">🌱 Low Priority</option>
+            </select>
+            <button id="add-btn">Add Task</button>
+        </div>
+
+        <div id="task-list" class="task-list">
+            <!-- Tasks will be injected here via JS -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
