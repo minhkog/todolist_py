@@ -1,4 +1,4 @@
-2. Deploy bằng Render / Railway / Fly.io
+Deploy bằng Render / Railway / Fly.io:
 
   - Các bước chung:
 
